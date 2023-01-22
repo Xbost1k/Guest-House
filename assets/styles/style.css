@@ -157,6 +157,8 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, 
   background:transparent; 
 }
 
+/* CSS начало header *Xbost1k* */
+
 @font-face {
 	font-family: 'Montserrat';
 	src: url("../fonts/Montserrat-Regular.ttf") format("TrueType");
@@ -185,6 +187,8 @@ body {
 	font-family: Montserrat;
 }
 .header {
+	position: absolute;
+	width: 100%;
 	background-color: #52503B;
 }
 
@@ -209,7 +213,7 @@ a {
 }
 .nav__header {
 	display: flex;
-	margin-left: -16px;
+	margin-left: -10px;
 	gap: 24px;
 }
 
@@ -218,15 +222,47 @@ a {
 	font-size: 15px;
 }
 
-.nav__header li:last-of-type > a {
-	font-family: 'Montserrat';
-	font-size: 14px;
-	font-weight: 400;
-}
-
 .btn {
 	padding: 11px 18px;
 	border-radius: 6px;
 	border: 0;
 	margin: 0;
 }
+
+/* CSS код header *Xbost1k* */
+
+/* CSS код section-1 *Xbost1k* */
+
+.section-1 {
+	background-image: url("../images/img-section-1.png");
+	background-image: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 90px;
+	padding-top: 248px;
+}
+
+
+.sec1_title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.sec1_title h1 {
+	font-size: 48px;
+	color: white;
+	text-align: center;
+	margin-top: 34px;
+}
+
+.sec1_title p {
+	font-size: 14px;
+	color: white;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-top: 33px;
+	margin-bottom: 113px;
+}
+
+/* CSS конец код section-1 *Xbost1k* */
