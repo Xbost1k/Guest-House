@@ -195,9 +195,16 @@ body {
   padding: 0 20px;
 }
 .header__wrapper {
+
   display: flex;
   align-items: center;
   height: 80px;
+=======
+	display: flex;
+	align-items: center;
+	height: 80px;
+	justify-content: space-between;
+
 }
 a {
   text-decoration: none;
@@ -208,10 +215,16 @@ a {
   margin-top: 5px;
 }
 .nav__header {
+
   display: flex;
   margin-left: 358px;
   margin-right: 368px;
   gap: 24px;
+=======
+	display: flex;
+	margin-left: -16px;
+	gap: 24px;
+
 }
 
 .nav__header a {
