@@ -158,75 +158,306 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, 
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url("../fonts/Montserrat-Regular.ttf") format("TrueType");
-	font-weight: 400;
-	font-style: normal;
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.ttf") format("TrueType");
+  font-weight: 400;
+  font-style: normal;
 }
 @font-face {
-	font-family: 'Montserrat-medium';
-	src: url("../fonts/Montserrat-Medium.ttf") format("TrueType");
-	font-weight: 500;
-	font-style: normal;
+  font-family: 'Montserrat-medium';
+  src: url("../fonts/Montserrat-Medium.ttf") format("TrueType");
+  font-weight: 500;
+  font-style: normal;
 }
 @font-face {
-	font-family: 'Montserrat bold';
-	src: url("../fonts/Montserrat-Bold.ttf") format("TrueType");
-	font-weight: bold;
-	font-style: normal;
+  font-family: 'Montserrat bold';
+  src: url("../fonts/Montserrat-Bold.ttf") format("TrueType");
+  font-weight: bold;
+  font-style: normal;
 }
 
 * {
-	text-decoration: none;
-	list-style: none;
-	box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 body {
-	font-family: Montserrat;
+  font-family: Montserrat;
 }
 .header {
-	background-color: #52503B;
+  background-color: #52503B;
 }
 
 .container {
-	max-width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
 }
 .header__wrapper {
+
+  display: flex;
+  align-items: center;
+  height: 80px;
+=======
 	display: flex;
 	align-items: center;
 	height: 80px;
 	justify-content: space-between;
+
 }
 a {
-	text-decoration: none;
-	display: inline-block;
-	
+  text-decoration: none;
+  display: inline-block;
+  
 }
 .logo {
-	margin-top: 5px;
+  margin-top: 5px;
 }
 .nav__header {
+
+  display: flex;
+  margin-left: 358px;
+  margin-right: 368px;
+  gap: 24px;
+=======
 	display: flex;
 	margin-left: -16px;
 	gap: 24px;
+
 }
 
 .nav__header a {
-	color: #FFFFFF;
-	font-size: 15px;
+  color: #FFFFFF;
+  font-size: 15px;
 }
 
 .nav__header li:last-of-type > a {
-	font-family: 'Montserrat';
-	font-size: 14px;
-	font-weight: 400;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .btn {
-	padding: 11px 18px;
-	border-radius: 6px;
-	border: 0;
-	margin: 0;
+  padding: 11px 18px;
+  border-radius: 6px;
+  border: 0;
+  margin: 0;
 }
+
+
+/* "Сss" код Джека  'начала'*/
+
+
+
+
+.footer{
+  background-color: #FAF8F0;
+  width: 100%;
+  padding: 100px 0;
+}
+.footer-top{
+  width: 533px;
+  color: #52503B;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-top_rect{
+  background: #E08631;
+  border-radius: 0px;
+  width: 42px;
+  height: 8px;
+  margin-bottom: 30px;
+  transition: all 0.5s ease;
+}
+.footer-top_rect:hover{
+  transform: scale(2);
+}
+.footer-top_text{
+  margin-bottom: 14px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  color: #52503B;
+  transition: all 0.5s ease;
+}
+.footer-top_text:hover{
+  margin-left: 15px;
+}
+.footer-top > p{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #52503B;
+  transition: all 0.5s ease;
+}
+.footer-top > p:hover{
+  margin-right: 15px;
+}
+.btn-group{
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.btn1{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #52503B;
+  border: 4px solid #52503B;
+  padding: 16px 26px;
+  border-radius: 6px;
+}
+.btn1:hover{
+  background-color: #cecece;
+}
+.btn2:hover{
+  background-color: #323124;
+  border: 4px solid #323124;
+}
+.btn2{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #52503B;
+  border-radius: 6px;
+  padding: 16px 26px;
+  border: 4px solid #52503B;
+  
+}
+
+.footer-bottom{
+  padding: 100px 0;
+  width: 100%;
+  background-color: #52503B;
+}
+.footer-info{
+  width: 100%;  
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer-info_list{
+  width: 280px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.5s ease;
+}
+.footer-info_list2{
+  width: 280px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.5s ease;
+}
+.footer-info_list:hover{
+  transform: translateX(-20px);
+}
+.footer-info_list2:hover{
+  /* margin-top: 10px; */
+  transform: translateY(-20px);
+}
+.footer-info_list3{
+  width: 280px;
+  gap: 10px;
+  display: flex;
+  position: relative;
+  width: 580px !important;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.5s;
+}
+.footer-info_list3:hover{
+  margin-top: 10px;
+}
+.footer-info-item{
+  font-family: 'Montserrat' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: #FFFFFF !important;  
+  text-transform: capitalize !important;
+}
+.tt1{
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+}
+.socials{
+  margin-top: 20px;
+  width: 136px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-media{
+  width: 32px;
+  height: 32px;
+}
+.footer-input{
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 16px 30px;
+  width: 100%;
+  transition: all 0.5s ease;
+  outline: none;
+}
+.footer-input:focus{
+  box-shadow: 0 0 10px white;
+}
+#inp1{
+  left: 88%;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  top: 68%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  width: 61px;
+  height: 30px;
+  background: #52503B;
+  border-radius: 10px;
+  position: absolute;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.footer-about{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 150px;
+}
+
+
+/*  "Сss" код Джека  'конец'*/
+
+
+
+
+
