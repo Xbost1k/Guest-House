@@ -1,160 +1,67 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* CSS начало header *Xbost1k* */
 
-html {
-  line-height: 1.15; 
-  -webkit-text-size-adjust: 100%; 
+.text {
+	font-size: 14px;
+	line-height: 20px;
+	color: #52503B;
 }
-body {
-  margin: 0;
+
+.button {
+	padding: 11px 18px;
+	border-radius: 6px;
+	border: 0;
+	margin: 0;
 }
-main {
-  display: block;
-}
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-hr {
-  box-sizing: content-box; 
-  height: 0; 
-  overflow: visible; 
-}
-pre {
-  font-family: monospace, monospace; 
-  font-size: 1em; 
-}
+
 a {
-  background-color: transparent;
-}
-abbr[title] {
-  border-bottom: none; 
-  text-decoration: underline; 
-  text-decoration: underline dotted; 
-}
-b,
-strong {
-  font-weight: bolder;
-}
-code,
-kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-small {
-  font-size: 80%;
-}
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+	text-decoration: none;
+	display: inline-block;
 }
 
-sub {
-  bottom: -0.25em;
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 1440px;
 }
 
-sup {
-  top: -0.5em;
+
+.title-decoration::before {
+	content: ' ';
+	display: block;
+	background-color: #E08631;
+	width: 42px;
+	height: 8px;
+	margin-bottom: 30px;
 }
-img {
-  border-style: none;
+
+.decoration-center::before {
+	margin-left: auto;
+	margin-right: auto;
 }
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; 
-  font-size: 100%; 
-  line-height: 1.15; 
-  margin: 0; 
+
+.description {
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
 }
-button,
-input { 
-  overflow: visible;
+
+.section-title {
+	font-size: 32px;
+	line-height: 36px;
+	color: #52503B;
+	text-align: center;
 }
-button,
-select { 
-  text-transform: none;
-}
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-legend {
-  box-sizing: border-box; 
-  color: inherit; 
-  display: table; 
-  max-width: 100%; 
-  padding: 0; 
-  white-space: normal; 
-}
-progress {
-  vertical-align: baseline;
-}
-textarea {
-  overflow: auto;
-}
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box; 
-  padding: 0; 
-}
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-[type="search"] {
-  -webkit-appearance: textfield; 
-  outline-offset: -2px; 
-}
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit; 
-}
-details {
-  display: block;
-}
-summary {
-  display: list-item;
-}
-template {
-  display: none;
-}
-[hidden] {
-  display: none;
-}
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
-  margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-  vertical-align:baseline;
-  background:transparent; 
+
+.section-subtitle {
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: #52503B;
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 28px;
 }
 
 @font-face {
@@ -185,6 +92,8 @@ body {
 	font-family: Montserrat;
 }
 .header {
+	position: absolute;
+	width: 100%;
 	background-color: #52503B;
 }
 
@@ -198,35 +107,198 @@ body {
 	align-items: center;
 	height: 80px;
 	justify-content: space-between;
-}
-a {
-	text-decoration: none;
-	display: inline-block;
 	
 }
-.logo {
+
+.header__logo {
 	margin-top: 5px;
 }
-.nav__header {
+.header__logo-img {
+	width: 128px;
+}
+.header__items {
 	display: flex;
-	margin-left: -16px;
+	margin-right: 10px;
 	gap: 24px;
 }
 
-.nav__header a {
+.header__item-link {
 	color: #FFFFFF;
 	font-size: 15px;
 }
 
-.nav__header li:last-of-type > a {
-	font-family: 'Montserrat';
+
+
+/* CSS код header *Xbost1k* */
+
+/* CSS код section-1 *Xbost1k* */
+
+.section-1 {
+	width: 100%;
+	background-image: url("../images/img-section-1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 90px;
+	padding-top: 248px;
+}
+
+
+.sec1_title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.sec1_title h2 {
+	font-size: 48px;
+	color: white;
+	text-align: center;
+	margin-top: 34px;
+}
+
+.sec1_title p {
 	font-size: 14px;
+	color: white;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-top: 33px;
+	margin-bottom: 113px;
+}
+
+/* CSS конец код section-1 *Xbost1k* */
+
+
+.description-site {
+	width: 100%;
+	background-color: #FAF8F0;
+	padding-top: 100px;
+	padding-bottom: 87px;
+}
+
+
+
+.description-site__text {
+	display: flex;
+	line-height: 20px;
+	color: #333333;
+}
+
+.description-site__inner {
+	width: 768px;
+	padding-top: 5px;
+	margin: 0 auto;
+}
+
+.description-site__text-left {
+	width: 820px;
+	margin-right: 45px;
+	text-align: top;
+}
+.description-site__text-right {
+	width: 850px;
+}
+
+
+.description-site__btn {
+	background-color: #52503B;
+	color: white;
+	margin-top: 40px;
+	border: 1px solid #52503B;
+}
+
+
+.guest-house {
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 143px;
+}
+.guest-house__title {
+	font-family: 'Montserrat bold';
+	font-size: 96px;
+	line-height: 96px; 
+}
+
+/*  sleeping arrangements */
+
+.sleeping-arrangements{
+	display: flex;
+	flex-direction: column;
+	background-color: #FAF8F0;
+	padding-bottom: 100px;
+}
+
+.sleeping-arrangements__img {
+	justify-content: center;
+	margin-bottom: 98px;
+}
+
+.sleeping-arrangements__items {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	padding: 0 20px;
+}
+.sleeping-arrangements__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.sleeping-arrangements__text {
+	text-align: center;
+	margin-top: 3px;
+	width: 340px;
+}
+
+.sleeping-arrangements__title-icon {
+	width: 100%;
+	margin-bottom: 0;
+}
+
+
+/* The perfect escape. */
+
+.perfect-escape {
+	padding-top: 98px;
+}
+
+.perfect-escape__inner {
+	padding: 0 16px;
+}
+
+.perfect-escape__title {
+	text-align: left;
+}
+
+.perfect-escape__subtitle {
+	margin-left: 0;
+	text-align: left;
+}
+
+.perfect-escape__item-description {
+	color: #333333;
+}
+.perfect-escape__item-img {
+	margin-right: 16px;
+}
+
+.perfect-escape__item {
+	display: flex;
+	width: 568px;
+	margin-bottom: 32px;
+}
+.perfect-escape__item-title {
+	font-size: 14px;
+	font-style: normal;
 	font-weight: 400;
 }
 
-.btn {
-	padding: 11px 18px;
-	border-radius: 6px;
-	border: 0;
-	margin: 0;
+.perfect-escape__items {
+	display: flex; 
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	height: 336px;
 }
