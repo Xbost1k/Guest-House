@@ -262,6 +262,8 @@ body {
 
 .perfect-escape {
 	padding-top: 98px;
+	background-color: white;
+	padding-bottom: 70px;
 }
 
 .perfect-escape__inner {
@@ -277,28 +279,31 @@ body {
 	text-align: left;
 }
 
-.perfect-escape__item-description {
-	color: #333333;
+
+.perfect-escape__items {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -16px;
+}
+.perfect-escape__item {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 42px;
+	flex: 0 0 568px;
+	margin-left: 16px;
+	margin-right: 16px;
 }
 .perfect-escape__item-img {
 	margin-right: 16px;
-}
-
-.perfect-escape__item {
-	display: flex;
-	width: 568px;
-	margin-bottom: 32px;
+	width: 36px;
 }
 .perfect-escape__item-title {
 	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
 }
 
-.perfect-escape__items {
-	display: flex; 
-	flex-direction: column;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	height: 336px;
+
+/* Past guests */
+
+.past-guests {
+	padding-top: 100px;
 }
