@@ -288,10 +288,8 @@ body {
 .perfect-escape__item {
 	display: flex;
 	align-items: flex-start;
-	margin-bottom: 42px;
+	margin: 0 16px 42px 16px;
 	flex: 0 0 568px;
-	margin-left: 16px;
-	margin-right: 16px;
 }
 .perfect-escape__item-img {
 	margin-right: 16px;
@@ -306,4 +304,51 @@ body {
 
 .past-guests {
 	padding-top: 100px;
+	background-color: #FAF8F0;
+}
+
+.past-guests__comments {
+	max-width: 1168px;
+}
+.company-comment {
+	max-width: 584px;
+	background-color: #FFFFFF;
+	color: #333333;
+	padding: 32px;
+	margin-left: 16px;
+}
+.company-comment__header {
+	margin-bottom: 10px;
+}
+.comment-rating {
+	margin-bottom: 7px;
+}
+.comment__rating-img {
+	margin-right: -2px;
+	padding: 0;
+}
+.company-comment__header-title {
+	color: #333333;
+	line-height: 24px;
+	font-size: 18px;
+}
+.company-comment__content {
+	margin-bottom: 14px;
+}
+.company-comment__author::before {
+	content: ' ';
+	display: inline-flex;
+	margin-right: 10px;
+	width: 2px;
+	height: 20px;
+	background-color: #E08631;
+	
+}
+.company-comment__author {
+	font-weight: 400;
+	margin-left: -3px;
+}
+
+.company-comment__inner {
+	max-width: 511px;
 }
