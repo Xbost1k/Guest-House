@@ -333,18 +333,18 @@ body {
 	font-size: 18px;
 }
 .company-comment__content {
-	margin-bottom: 14px;
+	margin-bottom: 20px;
 }
 .company-comment__author::before {
 	content: ' ';
-	display: inline-flex;
+	display: inline-block;
 	margin-right: 10px;
 	width: 2px;
 	height: 20px;
 	background-color: #E08631;
-	
 }
 .company-comment__author {
+	display: inline-flex;
 	font-weight: 400;
 	margin-left: -3px;
 }
