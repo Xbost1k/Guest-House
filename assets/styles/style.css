@@ -1,5 +1,4 @@
 /* CSS начало header *Xbost1k* */
-
 .text {
 	font-size: 14px;
 	line-height: 20px;
@@ -308,6 +307,7 @@ body {
 .past-guests {
 	padding-top: 100px;
 	background-color: #FAF8F0;
+	overflow: hidden;
 }
 
 .past-guests__comments {
@@ -316,9 +316,11 @@ body {
 	max-width: 1168px;
 	margin-left: 15px;
 	margin-bottom: 13px;
+	
 }
 .company-comment {
 	display: flex;
+
 	min-width: 584px;
 	background-color: #FFFFFF;
 	color: #333333;
