@@ -152,8 +152,10 @@ body {
 
 .sec1_title h2 {
 	font-size: 48px;
+	line-height: 52.8px;
 	color: white;
 	text-align: center;
+	
 	margin-top: 34px;
 }
 
@@ -163,6 +165,7 @@ body {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	margin-top: 33px;
+	line-height: 20px;
 	margin-bottom: 113px;
 }
 
@@ -373,6 +376,17 @@ body {
 	border-radius: 50%;
 	border: 2px solid #52503B;
 }
+
+.img {
+	display: block;
+	font-size: 0;
+	line-height: 0;
+}
+.box {
+	height: 100px;
+	background-color: aqua;
+}
+
 
 /* come together */
 
