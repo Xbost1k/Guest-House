@@ -308,14 +308,19 @@ body {
 }
 
 .past-guests__comments {
+	display: flex;
+	align-items: baseline;
 	max-width: 1168px;
+	margin-left: 15px;
+	margin-bottom: 13px;
 }
 .company-comment {
-	max-width: 584px;
+	display: flex;
+	min-width: 584px;
 	background-color: #FFFFFF;
 	color: #333333;
 	padding: 32px;
-	margin-left: 16px;
+	margin-right: 20px;
 }
 .company-comment__header {
 	margin-bottom: 10px;
@@ -333,6 +338,7 @@ body {
 	font-size: 18px;
 }
 .company-comment__content {
+	width: 100%;
 	margin-bottom: 20px;
 }
 .company-comment__author::before {
@@ -351,4 +357,44 @@ body {
 
 .company-comment__inner {
 	max-width: 511px;
+}
+
+.scroll-btn {
+	display: flex;
+	margin-bottom: 70px;
+	justify-content: flex-end;
+	margin-right: 14px;
+}
+
+.scroll-btn__item {
+	margin-left: 10px;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	border: 2px solid #52503B;
+}
+
+/* come together */
+
+.come-together {
+	
+}
+.container {
+}
+.come-together__inner {
+	max-width: 1168px;
+}
+.title-decoration {
+}
+.section-title {
+}
+.section-subtitle {
+}
+.come-together__items {
+}
+.come-together__item {
+}
+.come-together__item-img {
+}
+.come-together__item-description {
 }
