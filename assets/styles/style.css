@@ -103,7 +103,7 @@ body {
 }
 .header {
 	position: absolute;
-	width: 100%;
+	width: 1440px;
 	background-color: #52503B;
 }
 
@@ -479,7 +479,7 @@ body {
 	color: #52503B;
 }
 
-.place-order__btn--active:hover {
+.place-order__btn--active {
 	border: 4px solid #52503B;
 	background-color: #FAF8F0;
 	color: #52503B;
@@ -543,6 +543,7 @@ body {
 	margin: 0 0 21px;
 }
 .footer-form {
+	position: relative;
 	width: 576px;
 }
 
@@ -562,7 +563,7 @@ body {
 }
 .footer-form__button {
 	position: absolute;
-	right: 144px;
+	right: 8px;
 	height: 30px;
 	
 	padding-left: 5px;
